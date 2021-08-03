@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+body {
+    background-image: url("../images/bg-images/Backround.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.log__in {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.input__container {
+    background: white;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.about__section {
+    background: black;
+    color: #fff;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 50px;
+    padding-top: 150px;
+    transition: transform .2s
+}
+
+.about__section:hover {
+    transform: scale(1.08);
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .log__in {
+        display: block;
+    }
+
+    body {
+        padding: 40px;
+    }
+
+    .check__section {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .log__in {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .check__section {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .log__in {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .check__section {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .log__in {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .check__section {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 40px;
+    }
+
+    .about__section {
+        display: none;
+    }
+
+    .check__section {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
